@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - media/
 
 website:
   title: "chloeostermann.github.io"

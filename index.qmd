@@ -9,8 +9,11 @@ about:
     - text: LinkedIn
       href: https://www.linkedin.com/in/chlo%C3%A9-ostermann-868681301/
     - text: GitHub
+      href: https://github.com/chloeostm
+    - text: Email
+      href: mailto:chloe.ostermann@gmail.com
+    - text: Resume
+      href: files/resume.pdf
 ---
 
 Hello and welcome to my page! My name is Chloé Ostermann and I am a third year Environmental Studies student at UC Santa Barbara. :)
-
-![](media:/headshot.jpg){width="17em" style="border-radius: 50%;"}

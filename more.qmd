@@ -5,14 +5,18 @@ format: html
 
 ```{r}
 library(leaflet)
+library(tibble)
 
 cities <- tibble(
-  name = c("San Francisco"),
-  lat = c(37.7602523640256),
-  long = c(-122.42681736086065)
+  name = c("San Francisco", "Paris", "Montreal", "Madrid", "Hanoi", "Tahiti"),
+  lat = c(37.7602523640256, 48.86198773083308, 45.50566793423559, 40.415765578600706, 21.034791719384796, -17.543761791615648),
+  lng = c(-122.42681736086065, 2.294159806953058, -73.5819271670175, -3.7063982175738746, 105.8347141261459, -149.83170940623626)
 )
 
-leaflet() %>%
+leaflet(data = cities) %>%
   addTiles() %>%
-  addMarkers(~lng, ~lat, popup = ~name)
+  addAwesomeMarkers(~lng, ~lat, popup = ~name,
+                    icon = awesomeIcons(
+                      icon = "globe", iconColor = "black", markerColor = "blue", library = "fa"
+                    ))
 ```

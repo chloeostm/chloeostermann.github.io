@@ -3,4 +3,16 @@ title: "More"
 format: html
 ---
 
-More info
+```{r}
+library(leaflet)
+
+cities <- tibble(
+  name = c("San Francisco"),
+  lat = c(37.7602523640256),
+  long = c(-122.42681736086065)
+)
+
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(~lng, ~lat, popup = ~name)
+```

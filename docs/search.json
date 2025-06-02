@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Projects",
     "section": "",
-    "text": "About me"
+    "text": "No matching items"
+  },
+  {
+    "objectID": "more.html",
+    "href": "more.html",
+    "title": "More",
+    "section": "",
+    "text": "More info"
   },
   {
     "objectID": "index.html",
@@ -14,17 +21,10 @@
     "text": "Hello and welcome to my page! My name is Chloé Ostermann and I am a third year Environmental Studies student at UC Santa Barbara. :)"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Projects I am working on"
-  },
-  {
-    "objectID": "more.html",
-    "href": "more.html",
-    "title": "More",
-    "section": "",
-    "text": "More info"
+    "text": "About me"
   }
 ]

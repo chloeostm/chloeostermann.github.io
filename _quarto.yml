@@ -6,7 +6,7 @@ project:
     - files
 
 website:
-  title: "chloeostermann.github.io"
+  title: "Chloe Ostermann"
   navbar:
     left:
       - href: index.qmd

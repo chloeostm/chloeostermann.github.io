@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "Projects",
     "section": "",
-    "text": "1st Blog post\n\n\n\nQuarto\n\n\nR\n\n\nMEDS\n\n\n\nblog post description\n\n\n\nChloe Ostermann\n\n\nJun 1, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Biomimicry in Architecture\n\n\n\nQuarto\n\n\nR\n\n\nMEDS\n\n\n\nA zine I made on Biomimicry in Architecture with termite inspired designs\n\n\n\nChloe Ostermann\n\n\nJun 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaterials Research\n\n\n\nQuarto\n\n\nR\n\n\nMEDS\n\n\n\nResearch on Ion-Exchange Membranes\n\n\n\nChloe Ostermann\n\n\nJun 1, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "more.html",
@@ -14,11 +14,18 @@
     "text": "library(leaflet)\nlibrary(tibble)\n\ncities &lt;- tibble(\n  name = c(\"San Francisco\", \"Paris\", \"Montreal\", \"Madrid\", \"Hanoi\", \"Tahiti\", \"Cape Town\"),\n  lat = c(37.7602523640256, 48.86198773083308, 45.50566793423559, 40.415765578600706, 21.034791719384796, -17.543761791615648, -33.9255539018927),\n  lng = c(-122.42681736086065, 2.294159806953058, -73.5819271670175, -3.7063982175738746, 105.8347141261459, -149.83170940623626, 18.43387871377049)\n)\n\nleaflet(data = cities) %&gt;%\n  addTiles() %&gt;%\n  addAwesomeMarkers(~lng, ~lat, popup = ~name,\n                    icon = awesomeIcons(\n                      icon = \"globe\", iconColor = \"black\", markerColor = \"blue\", library = \"fa\"\n                    ))"
   },
   {
-    "objectID": "posts/20250601_post1/index.html",
-    "href": "posts/20250601_post1/index.html",
-    "title": "1st Blog post",
+    "objectID": "posts/20250601_post1_research/index.html",
+    "href": "posts/20250601_post1_research/index.html",
+    "title": "Materials Research",
     "section": "",
-    "text": "CitationBibTeX citation:@online{ostermann2025,\n  author = {Ostermann, Chloe},\n  title = {1st {Blog} Post},\n  date = {2025-06-01},\n  url = {https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nOstermann, Chloe. 2025. “1st Blog Post.” June 1, 2025. https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/."
+    "text": "Here I will describe my reserach\n\n\n\nCitationBibTeX citation:@online{ostermann2025,\n  author = {Ostermann, Chloe},\n  title = {Materials {Research}},\n  date = {2025-06-01},\n  url = {https://chloeostermann.github.io/posts/20250601_post1_research/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nOstermann, Chloe. 2025. “Materials Research.” June 1, 2025.\nhttps://chloeostermann.github.io/posts/20250601_post1_research/."
+  },
+  {
+    "objectID": "posts/20250603_post2_biomimicry/index.html",
+    "href": "posts/20250603_post2_biomimicry/index.html",
+    "title": "Biomimicry in Architecture",
+    "section": "",
+    "text": "CitationBibTeX citation:@online{ostermann2025,\n  author = {Ostermann, Chloe},\n  title = {Biomimicry in {Architecture}},\n  date = {2025-06-03},\n  url = {https://chloeostermann.github.io/posts/20250601_post2_biomimicry/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nOstermann, Chloe. 2025. “Biomimicry in Architecture.” June\n3, 2025. https://chloeostermann.github.io/posts/20250601_post2_biomimicry/."
   },
   {
     "objectID": "index.html",
@@ -30,8 +37,8 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "Meet my kitties!\nMy cats mean the world to me and have been a constant source of comfort so I figured they deserve a place on this page about me. On the left is Sundae, also called Sunny, who is the sweetest cat I know. Very cuddly and smart, she is slightly more shy than her brother and seriously loves to eat cheese and strawberries.\nOn the right, Orbit is just a big chunky ball of fluff and fun. He reminds me of a cuddly teddy bear the way he lets you flop him around when he is ready for nap time (which they both take very seriously). He is very food motivated, playful, and often gets into trouble for jumping on the counter and eating flowers.\nEven when I can’t see them due to the distance from college, I love to look look at pictures of them in my camera roll (which has to be more than 50% cat pictures). In fact, it was very difficult choosing the right picture for each of them."
+    "text": "Hi there! My name is Chloé Ostermann and I am currently majoring in Environmental Studies (B.S.). Having taken a wide array of classes already at UCSB, I have pinpointed that I am interested in topics of Sustainability\nI am French American and had the\n\n\nMeet my kitties!\nMy cats mean the world to me and have been a constant source of comfort so I figured they deserve a place on this page about me. On the left is Sundae, also called Sunny, who is the sweetest cat I know. Very cuddly and smart, she is slightly more shy than her brother and seriously loves to eat cheese and strawberries.\nOn the right, Orbit is just a big chunky ball of fluff and fun. He reminds me of a cuddly teddy bear the way he lets you flop him around when he is ready for nap time (which they both take very seriously). He is very food motivated, playful, and often gets into trouble for jumping on the counter and eating flowers.\nEven when I can’t see them due to the distance from college, I love to look look at pictures of them in my camera roll (which has to be more than 50% cat pictures). In fact, it was very difficult choosing the right picture for each of them on this page."
   }
 ]

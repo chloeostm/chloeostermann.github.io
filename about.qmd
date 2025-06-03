@@ -1,5 +1,11 @@
 ---
-title: "About"
+title: "About Me"
+---
+
+Hi there! My name is Chloé Ostermann and I am currently majoring in Environmental Studies (B.S.). Having taken a wide array of classes already at UCSB, I have pinpointed that I am interested in topics of Sustainability
+
+I am French American and had the
+
 ---
 
 # Meet my kitties! 
@@ -8,7 +14,7 @@ My cats mean the world to me and have been a constant source of comfort so I fig
 
 On the right, Orbit is just a big chunky ball of fluff and fun. He reminds me of a cuddly teddy bear the way he lets you flop him around when he is ready for nap time (which they both take very seriously). He is very food motivated, playful, and often gets into trouble for jumping on the counter and eating flowers.
 
-Even when I can't see them due to the distance from college, I love to look look at pictures of them in my camera roll (which has to be more than 50% cat pictures). In fact, it was very difficult choosing the right picture for each of them.
+Even when I can't see them due to the distance from college, I love to look look at pictures of them in my camera roll (which has to be more than 50% cat pictures). In fact, it was very difficult choosing the right picture for each of them on this page.
 
 ::: side-by-side
 ![Sunny Image](media/Sunny.png) ![Orbit Image](media/Orbit.png)

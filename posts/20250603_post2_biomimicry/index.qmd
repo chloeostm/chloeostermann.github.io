@@ -1,0 +1,17 @@
+---
+title: "Biomimicry in Architecture"
+description: "A zine I made on Biomimicry in Architecture with termite inspired designs"
+author:
+  - name: Chloe Ostermann
+    url: https://chloeostermann.github.io/
+    orcid: 0000-0002-5300-3075
+    affiliation: University of California, Santa Barbara
+    affiliation-url: https://www.ucsb.edu/ 
+date: 06-03-2025
+categories: [Quarto, R, MEDS] # self-defined categories
+citation: 
+  url: https://chloeostermann.github.io/posts/20250601_post2_biomimicry/ 
+image: preview-image.png
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+

@@ -1,1 +1,11 @@
 /* css styles */
+.side-by-side {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.side-by-side img {
+  max-width: 300px;
+  height: auto;
+}

@@ -2,8 +2,8 @@ project:
   type: website
   output-dir: docs
   resources:
-    - media
-    - files
+    - media/**
+    - files/**
 
 website:
   title: "Chloe Ostermann"
@@ -14,6 +14,7 @@ website:
       - about.qmd
       - posts.qmd
       - more.qmd
+page-layout: full
 
 format:
   html:

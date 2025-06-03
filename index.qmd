@@ -1,5 +1,6 @@
 ---
 title: "Chloé Ostermann"
+toc: false
 about:
   image: media/headshot.jpg
   template: trestles
@@ -13,21 +14,23 @@ about:
       icon: github
       href: https://github.com/chloeostm
     - text: Email
-      icon: inbox
+      icon: envelope
       href: mailto:chloe.ostermann@gmail.com
     - text: Resume
       icon: file
       href: files/resume.pdf
 ---
 
-# **Welcome**
+# Welcome
 
 Hello! My name is Chloé Ostermann and I am a third year student at UC Santa Barbara pursuing a BS degree in Environmental Studies with a minor in Architecture and Urban History.
 
 # Education
 
-University of California, Santa Barbara - Environmental Studies B.S, Architecture and Urban History minor (Expected June 2026)
+**Environmental Studies B.S., Architecture and Urban History Minor** (2022-2026) \| University of California, Santa Barbara
 
 # Current Positions
 
-I am currently working as an undergraduate research assistant for the Sakamoto group in UCSB's Materials Department where I am studying the electrochemical properties of various ion-exchange membranes. I also work at UCSB's dining common Carrillo where I serve food, and buss tables.
+**Undergaduate Research Assistant:** I am currently working as an undergraduate research assistant for the Sakamoto group in UCSB's Materials Department where I am studying the electrochemical properties of various ion-exchange membranes.
+
+**Carrillo Dining Commons:** I also work at UCSB's dining common Carrillo where I scan in guests at the lobby, serve food, and buss tables.

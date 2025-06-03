@@ -1,17 +1,24 @@
 ---
 title: "Biomimicry in Architecture"
-description: "A zine I made on Biomimicry in Architecture with termite inspired designs"
+description: "A zine on Biomimicry in Architecture featuring termite inspired designs"
 author:
   - name: Chloe Ostermann
-    url: https://chloeostermann.github.io/
+    url: https://chloeostermann.github.io
     orcid: 0000-0002-5300-3075
     affiliation: University of California, Santa Barbara
     affiliation-url: https://www.ucsb.edu/ 
 date: 06-03-2025
-categories: [Quarto, R, MEDS] # self-defined categories
+categories: [Biomimicry, Zine, Quarto, R] # self-defined categories
 citation: 
   url: https://chloeostermann.github.io/posts/20250601_post2_biomimicry/ 
 image: preview-image.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
+In March of 2024, I had the opportunity to take the class ES 40 with Professor Jen Martin. In this class, we explored how to exercise critical thinking when navigating the web and any resources we might use in our future professional careers.
+
+The capstone assignment for this class was to develop a creative project on any subject we might be interested in. I picked the topic of bio-mimicry having heard of it in high school and being mesmerized by how intricately designed nature is and how applicable its elements can be to human designs.
+
+I opted for the topic of bio mimicry in architecture by giving the example of naturally insulated buildings inspired by termitarys (termite nests). To display all of my finding on this topic, I decided to create a zine on Canva.
+
+![](/files/biomimicry_zine.pdf){width="100%" height="600px"}

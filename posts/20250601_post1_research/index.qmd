@@ -8,7 +8,7 @@ author:
     affiliation: University of California, Santa Barbara
     affiliation-url: https://www.ucsb.edu/
 date: 06-01-2025
-categories: [Materials, Research, Quarto, R] # self-defined categories
+categories: [Materials, Research, Electrochemistry] # self-defined categories
 citation: 
   url: https://chloeostermann.github.io/posts/20250601_post1_research/ 
 image: preview-image.png

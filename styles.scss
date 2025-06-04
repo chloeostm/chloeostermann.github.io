@@ -1,0 +1,24 @@
+/*-- scss:defaults --*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+$off-white: #e7e3dd;
+
+// Base document colors
+$navbar-bg: #588157; // navbar
+$navbar-fg: #A3B18A; // navbar foreground elements
+$navbar-hl: #344E41; // highlight color when hovering over navbar links
+$body-bg: $off-white; // page background 
+$body-color: #588157; // page text 
+$footer-bg: #A3B18A; // footer color
+$link-color: #344E41; // link color
+$code-bg: #344E41; // inline code background color
+$code-color: #344E41; // inline code text color
+
+/*-- scss:rules --*/
+
+h1 {
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #588157
+}

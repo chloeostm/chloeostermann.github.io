@@ -17,6 +17,6 @@ leaflet(data = cities) %>%
   addTiles() %>%
   addAwesomeMarkers(~lng, ~lat, popup = ~name,
                     icon = awesomeIcons(
-                      icon = "globe", iconColor = "black", markerColor = "blue", library = "fa"
+                      icon = "globe", iconColor = "black", markerColor = "#588157", library = "fa"
                     ))
 ```

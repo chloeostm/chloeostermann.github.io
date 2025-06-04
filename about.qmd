@@ -2,9 +2,26 @@
 title: "About Me"
 ---
 
-Hi there! My name is Chloé Ostermann and I am currently majoring in Environmental Studies (B.S.). Having taken a wide array of classes already at UCSB, I have pinpointed that I am interested in topics of Sustainability
+Hi there! My name is Chloé Ostermann and I am currently majoring in Environmental Studies (B.S.) with a minor in Architecture and Urban History. Having taken a wide array of classes at UCSB, I have pinpointed that I am interested in topics of Sustainability, Renewable Energy, and Environmental Engineering.
 
-I am French American and had the
+---
+
+# Hobbies & Excursions
+
+During my free time, I enjoy learning new crafts and going on excursions with friends. Most recently, I learned how to knit using circular knitting needles and have been working on a boat-neck top. I also taught myself to crochet articles of clothing like a skirt, a shawl, and two tops.
+
+Having grown up in a very sports-centered family, I also find ways to incorporate sports and excursions into my schedule.
+
+
+::: {layout="[[1, 1, 1, 1]]"}
+![](media/hikes/tangerine_fall.png){group="aa" description="Tangerine Fall, SB"}
+
+![](media/hikes/tangerine1.png){group="aa" description="Tangerine Falls Trail"}
+
+![](media/hikes/muir_woods.png){group="aa" description="Muir Woods National Park"}
+
+![](media/hikes/jesusita.png){group="aa" description="Jesusita Trail, SB"}
+:::
 
 ---
 

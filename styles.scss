@@ -6,7 +6,7 @@ $off-white: #e7e3dd;
 
 // Base document colors
 $navbar-bg: #588157; // navbar
-$navbar-fg: #A3B18A; // navbar foreground elements
+$navbar-fg: $off-white; // navbar foreground elements
 $navbar-hl: #344E41; // highlight color when hovering over navbar links
 $body-bg: $off-white; // page background 
 $body-color: #588157; // page text 

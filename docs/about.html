@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -66,6 +100,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+<link href="site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet">
+<script src="site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
+<link href="site_libs/fontawesome-4.7.0/font-awesome.min.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -102,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./more.html"> 
-<span class="menu-text">More</span></a>
+<span class="menu-text">Experience and Skills</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -120,7 +167,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#hobbies-excursions" id="toc-hobbies-excursions" class="nav-link active" data-scroll-target="#hobbies-excursions">Hobbies &amp; Excursions</a></li>
+  <li><a href="#experience-and-skills" id="toc-experience-and-skills" class="nav-link active" data-scroll-target="#experience-and-skills">Experience and Skills</a></li>
+  <li><a href="#hobbies-excursions" id="toc-hobbies-excursions" class="nav-link" data-scroll-target="#hobbies-excursions">Hobbies &amp; Excursions</a></li>
   <li><a href="#meet-my-kitties" id="toc-meet-my-kitties" class="nav-link" data-scroll-target="#meet-my-kitties">Meet my kitties!</a></li>
   </ul>
 </nav>
@@ -149,26 +197,66 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Hi there! My name is Chloé Ostermann and I am currently majoring in Environmental Studies (B.S.) with a minor in Architecture and Urban History. Having taken a wide array of classes at UCSB, I have pinpointed that I am interested in topics of Sustainability, Renewable Energy, and Environmental Engineering.</p>
 <hr>
+<section id="experience-and-skills" class="level1">
+<h1>Experience and Skills</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet) </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>cities <span class="ot">&lt;-</span> <span class="fu">tibble</span>( <span class="at">name =</span> <span class="fu">c</span>(<span class="st">"San Francisco"</span>, <span class="st">"Paris"</span>, <span class="st">"Montreal"</span>, <span class="st">"Madrid"</span>, <span class="st">"Hanoi"</span>, <span class="st">"Tahiti"</span>, <span class="st">"Cape Town"</span>), <span class="at">lat =</span> <span class="fu">c</span>(<span class="fl">37.7602523640256</span>, <span class="fl">48.86198773083308</span>, <span class="fl">45.50566793423559</span>, <span class="fl">40.415765578600706</span>, <span class="fl">21.034791719384796</span>, <span class="sc">-</span><span class="fl">17.543761791615648</span>, <span class="sc">-</span><span class="fl">33.9255539018927</span>), <span class="at">lng =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">122.42681736086065</span>, <span class="fl">2.294159806953058</span>, <span class="sc">-</span><span class="fl">73.5819271670175</span>, <span class="sc">-</span><span class="fl">3.7063982175738746</span>, <span class="fl">105.8347141261459</span>, <span class="sc">-</span><span class="fl">149.83170940623626</span>, <span class="fl">18.43387871377049</span>) )</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>(<span class="at">data =</span> cities) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addAwesomeMarkers</span>(<span class="sc">~</span>lng, <span class="sc">~</span>lat, <span class="at">popup =</span> <span class="sc">~</span>name, <span class="at">icon =</span> <span class="fu">awesomeIcons</span>( <span class="at">icon =</span> <span class="st">"globe"</span>, <span class="at">iconColor =</span> <span class="st">"black"</span>, <span class="at">markerColor =</span> <span class="st">"darkgreen"</span>, <span class="at">library =</span> <span class="st">"fa"</span> ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-03e1d93429d6e427da5e" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-03e1d93429d6e427da5e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addAwesomeMarkers","args":[[37.7602523640256,48.86198773083308,45.50566793423559,40.41576557860071,21.0347917193848,-17.54376179161565,-33.9255539018927],[-122.4268173608606,2.294159806953058,-73.5819271670175,-3.706398217573875,105.8347141261459,-149.8317094062363,18.43387871377049],{"icon":"globe","markerColor":"darkgreen","iconColor":"black","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"fa"},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["San Francisco","Paris","Montreal","Madrid","Hanoi","Tahiti","Cape Town"],null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-33.9255539018927,48.86198773083308],"lng":[-149.8317094062363,105.8347141261459]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<hr>
+</section>
 <section id="hobbies-excursions" class="level1">
 <h1>Hobbies &amp; Excursions</h1>
 <p>During my free time, I enjoy learning new crafts and going on excursions with friends. Most recently, I learned how to knit using circular knitting needles and have been working on a boat-neck top. I also taught myself to crochet articles of clothing like a skirt, a shawl, and two tops.</p>
-<p>Having grown up in a very sports-centered family, I also find ways to incorporate sports and excursions into my schedule.</p>
+<p>Having grown up in a very sports-centered family, I also find ways to incorporate sports and excursions into my schedule. I like to go sunset jogging and doing Pilates with friends whenever possible. I have also been going to the UCSB rec center to boulder at their rock climbing gym which has been giving me the best rounded workout.</p>
+<p>I also joined UCSB’s Excursion Club with whom I’ve been skiing, stand-up paddling, surfing, and hiking.</p>
+<p>Hiking around Santa Barbara and beyond has brought me the most rewarding sights. Every weekend I try and explore a new path I have not taken before and it always brings me to beautiful views full of new flowers, streams, and plants. So far, my favorites have been tangerine Falls, and the hot and cold spring trails. Below are some pictures of some hikes I have been on recently.</p>
 <div>
 
 </div>
 <div class="quarto-layout-panel" data-layout="[[1, 1, 1, 1]]">
 <div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: center;">
-<p><img src="media/hikes/tangerine_fall.png" class="img-fluid" data-group="aa" data-description="Tangerine Fall, SB"></p>
+<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/hikes/tangerine_fall.png" class="img-fluid figure-img"></p>
+<figcaption>Tangerine Falls, SB</figcaption>
+</figure>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: center;">
-<p><img src="media/hikes/tangerine1.png" class="img-fluid" data-group="aa" data-description="Tangerine Falls Trail"></p>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: center;">
-<p><img src="media/hikes/muir_woods.png" class="img-fluid" data-group="aa" data-description="Muir Woods National Park"></p>
+<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/hikes/tangerine1.png" class="img-fluid figure-img" data-group="aa" data-description="Tangerine Falls Trail"></p>
+<figcaption>Tangerine Falls Trail, SB</figcaption>
+</figure>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: center;">
-<p><img src="media/hikes/jesusita.png" class="img-fluid" data-group="aa" data-description="Jesusita Trail, SB"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/hikes/muir_woods.png" class="img-fluid figure-img" data-group="aa" data-description="Muir Woods National Park"></p>
+<figcaption>Muir Woods National Park</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/hikes/jesusita.png" class="img-fluid figure-img" data-group="aa" data-description="Jesusita Trail, SB"></p>
+<figcaption>Jesusita Trail, SB</figcaption>
+</figure>
+</div>
 </div>
 </div>
 </div>

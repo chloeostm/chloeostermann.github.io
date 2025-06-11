@@ -1,0 +1,17 @@
+---
+title: "Code"
+description: "coding smth"
+author:
+  - name: Chloe Ostermann
+    url: https://chloeostm.github.io/chloeostermann.github.io/
+    orcid: 0000-0002-5300-3075
+    affiliation: University of California, Santa Barbara
+    affiliation-url: https://www.ucsb.edu/ 
+date: 06-10-2025
+categories: [Code, R, Quarto] # self-defined categories
+citation: 
+  url: https://chloeostermann.github.io/posts/20250610_post3_code/ 
+image: /media/code_preview.png
+draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+

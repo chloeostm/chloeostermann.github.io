@@ -7,12 +7,22 @@ format: html
 
 ## **ENV S 193DS - STATS FOR ENV SCI**
 
+Course includes descriptive statistics, analyzing differences between populations, hypothesis testing, regression analysis, and types of bias. Basic concepts and associated skills are taught drawing on examples and data from environmental science topics.
+
+skills: coding in R, coding websites, using prediction models, graphing data affective visualization depicting amount of sleep depending on transportation mode below
+
+::: {center}
+![](media/affective.png){width="40%"}
+:::
+
 ## **ENV S 103A - CALIFORNIA FLORA AND VEGETATION**
 
 An introduction to the plant diversity and plant communities of California. The floristic composition and ecology of California plant communities are examined through lectures and field observations.
 
+skills: dissecting flowers, keying species in the Jepson Manual, ridentifying flower parts and plant communities
+
 ::: {layout="[[1, 1, 1, 1]]"}
-![](media/Rancho/Rancho1.png)
+![Camping trip!](media/Rancho/Rancho1.png)
 
 ![](media/Rancho/Rancho2.png){group="aa" description="Tangerine Falls Trail"}
 
@@ -21,5 +31,16 @@ An introduction to the plant diversity and plant communities of California. The 
 ![](media/Rancho/Rancho3.png){group="aa" description="Jesusita Trail, SB"}
 :::
 
-
 ## **ENV S 105 - RENEWABLE ENERGY SYSTEMS**
+
+Introduction to renewable energy generation and energy storage technologies, their economics, their associated environmental and social issues, and policies and regulations important to the adoption and use of renewable energy systems. Course includes field trips and guest lecturers.
+
+skills: Calculating Levelized Cost of Energy (LCOE), using excel,
+
+## **EEMB 2LL - INTRO BIO LAB II**
+
+Invetsigating laboratory practices, basic principles of ecology, evolution and biodiversity.
+
+skills: research poster, using dissecting microscopes, long term experimenting with flies
+
+Descriptions provided by UCSB GOLD

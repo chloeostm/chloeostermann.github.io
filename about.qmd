@@ -10,7 +10,7 @@ Hi there! My name is Chloé Ostermann and I am currently majoring in Environment
 
 One thing about me is I love to travel and explore new places. I am lucky enough to be apart of a French American family so I got the chance to travel to France for during summer breaks almost every year since I was 4. My grandmother would take care of my brother and I for a month or two and keep us occupied with daily hikes in the mountains and other various activities. Besides trips to France to visit family, I've had the chance to explore other countries worldwide with my parents and brother, and learn about various cultures, traditions, and lifestyles. To see some of the countries I've been to, the map below shows what countries I've visited.
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 library(leaflet) 
 library(tibble)
 

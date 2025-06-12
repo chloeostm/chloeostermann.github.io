@@ -16,7 +16,7 @@ draft: false # setting this to `true` will prevent your post from appearing on y
 
 Below is a snipet of code from Homework 3 from ES 193DS. This graph represents data I collected over multiple weeks where I recorded the hours of sleep I got in one day and which transportation mode I used earlier in the day (walking, biking or taking the bus) to determine whether mode of transportation affects my sleep. I opted for a boxplot and seperate colors to better organize the three groups of transportation. Thanks to this visualization, I could better interpret my data and notice that I tend to sleep more on days where I walk (where I hit the highest Ymax) and the least when I take the bus. 
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(tidyverse)
 library(janitor)
@@ -52,7 +52,7 @@ ggplot(data = my_data_clean,
   
   theme(legend.position = "none") + # take out the legend
   theme(plot.title = element_text(hjust = 0.5)) + # center the title
-  theme(panel.border = element_rect(color = "darkgrey", fill = NA, size = 1)) # keep panel border
+  theme(panel.border = element_rect(color = "darkgrey", fill = NA, linewidth = 1)) # keep panel border
 
 
 ```

@@ -4,7 +4,6 @@ description: "A zine on Biomimicry in Architecture featuring termite inspired de
 author:
   - name: Chloe Ostermann
     url: https://chloeostm.github.io/chloeostermann.github.io/
-    orcid: 0000-0002-5300-3075
     affiliation: University of California, Santa Barbara
     affiliation-url: https://www.ucsb.edu/ 
 date: 06-03-2025

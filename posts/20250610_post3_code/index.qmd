@@ -14,4 +14,46 @@ image: /media/code_preview.png
 draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 ---
 
+Below is a snipet of code from Homework 3 from ES 193DS. This graph represents data I collected over multiple weeks where I recorded the hours of sleep I got in one day and which transportation mode I used earlier in the day (walking, biking or taking the bus) to determine whether mode of transportation affects my sleep. I opted for a boxplot and seperate colors to better organize the three groups of transportation. Thanks to this visualization, I could better interpret my data and notice that I tend to sleep more on days where I walk (where I hit the highest Ymax) and the least when I take the bus. 
+
+```{r}
+library(ggplot2)
+library(tidyverse)
+library(janitor)
+library(here)
+library(readxl)
+
+my_data <- read_xlsx(here("files","ES193DS_personal_data.xlsx"), sheet = "Sheet1") 
+# read in data
+my_data_clean <- my_data %>% 
+  clean_names() # clean data
+
+ggplot(data = my_data_clean, 
+       aes(x = transportation_mode, # x-axis
+           y = sleep_hrs, # y-axis
+           color = transportation_mode)) + # fill geoms by transportation mode
+  
+  geom_boxplot(color = "darkgrey") + # create boxplots
+  
+  geom_jitter(height = 0, # create jitter points size, width, and opacity
+              width = 0.1,
+              size = 2,
+              alpha = 0.6) + # data points set to 60% opacity
+  
+  scale_color_manual(values = c("firebrick4", "orange", "forestgreen")) + 
+  # set custom colors
+  
+  theme_minimal() + # minimal theme
+  labs(title = str_wrap("Boxplot comparing hours of sleep versus 
+                        mode of transportation used in a day", width = 60),  # set title
+       #wrap title so it doesn't get cut off
+       x = "Mode of transportation", # title x axis
+       y = "Hours slept") + # title y axis
+  
+  theme(legend.position = "none") + # take out the legend
+  theme(plot.title = element_text(hjust = 0.5)) + # center the title
+  theme(panel.border = element_rect(color = "darkgrey", fill = NA, size = 1)) # keep panel border
+
+
+```
 

@@ -9,7 +9,18 @@
  
 
 # Data and file overview
-
+├── chloeostermann.github.io.Rproj 
+├── README.md    
+├── _quarto.yml
+├── about.qmd
+├── index.qmd
+├── posts.qmd
+├── styles.css
+├── styles.scss
+├── media  
+└── posts  
+    └── _metadata.yml
+    └── 20250603_post2_biomimicry
 
 # Thought Process in Creating My Quarto Website
 This website contains informations on my hobbies, cats, experience, and skills. 

@@ -1,0 +1,5 @@
+ ,sleep_hrs,steps,commuting_time_min,caffeine,temperature,transportation_mode
+2025-04-21,8.5,"9,565",28,No,60,walk
+2025-04-22,9,"21,611",15,No,59,bus
+2025-04-23,8,"16,860",26,Yes,56,walk
+2025-04-24,8.5,"14,272",23,Yes,58,walk

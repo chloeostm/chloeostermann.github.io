@@ -1,6 +1,6 @@
 ---
 title: "Code"
-description: "coding smth"
+description: "Code used to graph hours of sleep vs transportation mode"
 author:
   - name: Chloe Ostermann
     url: https://chloeostm.github.io/chloeostermann.github.io/

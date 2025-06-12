@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "Projects",
     "section": "",
-    "text": "Code\n\n\n\nCode\n\n\nR\n\n\nQuarto\n\n\n\ncoding smth\n\n\n\nChloe Ostermann\n\n\nJun 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiomimicry in Architecture\n\n\n\nBiomimicry\n\n\nZine\n\n\nArchitecture\n\n\n\nA zine on Biomimicry in Architecture featuring termite inspired designs\n\n\n\nChloe Ostermann\n\n\nJun 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaterials Research\n\n\n\nMaterials\n\n\nResearch\n\n\nElectrochemistry\n\n\n\nResearch on Ion-Exchange Membranes\n\n\n\nChloe Ostermann\n\n\nJun 1, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Code\n\n\n\nCode\n\n\nR\n\n\nQuarto\n\n\n\nCode used to graph hours of sleep vs transportation mode\n\n\n\nChloe Ostermann\n\n\nJun 10, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBiomimicry in Architecture\n\n\n\nBiomimicry\n\n\nZine\n\n\nArchitecture\n\n\n\nA zine on Biomimicry in Architecture featuring termite inspired designs\n\n\n\nChloe Ostermann\n\n\nJun 3, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "more.html",
@@ -42,11 +42,11 @@
     "text": "Invetsigating laboratory practices, basic principles of ecology, evolution and biodiversity.\nskills: research poster, using dissecting microscopes, long term experimenting with flies\nDescriptions provided by UCSB GOLD"
   },
   {
-    "objectID": "posts/20250601_post1_research/index.html",
-    "href": "posts/20250601_post1_research/index.html",
-    "title": "Materials Research",
+    "objectID": "posts/20250603_post2_biomimicry/index.html",
+    "href": "posts/20250603_post2_biomimicry/index.html",
+    "title": "Biomimicry in Architecture",
     "section": "",
-    "text": "Here I will describe my reserach\n\n\n\nCitationBibTeX citation:@online{ostermann2025,\n  author = {Ostermann, Chloe},\n  title = {Materials {Research}},\n  date = {2025-06-01},\n  url = {https://chloeostermann.github.io/posts/20250601_post1_research/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nOstermann, Chloe. 2025. “Materials Research.” June 1, 2025.\nhttps://chloeostermann.github.io/posts/20250601_post1_research/."
+    "text": "In March of 2024, I had the opportunity to take the class ES 40 with Professor Jen Martin. In this class, we explored how to exercise critical thinking when navigating the web and any resources we might use in our future professional careers.\nThe capstone assignment for this class was to develop a creative project on any subject we might be interested in. I picked the topic of bio-mimicry having heard of it in high school and being mesmerized by how intricately designed nature is and how applicable its elements can be to human designs.\nI opted for the topic of bio mimicry in architecture by giving the example of naturally insulated buildings inspired by termitarys (termite nests). To display all of my finding on this topic, I decided to create a zine on Canva.\n\n\n\n\nCitationBibTeX citation:@online{ostermann2025,\n  author = {Ostermann, Chloe},\n  title = {Biomimicry in {Architecture}},\n  date = {2025-06-03},\n  url = {https://chloeostermann.github.io/posts/20250601_post2_biomimicry/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nOstermann, Chloe. 2025. “Biomimicry in Architecture.” June\n3, 2025. https://chloeostermann.github.io/posts/20250601_post2_biomimicry/."
   },
   {
     "objectID": "posts/20250610_post3_code/index.html",
@@ -54,13 +54,6 @@
     "title": "Code",
     "section": "",
     "text": "Below is a snipet of code from Homework 3 from ES 193DS. This graph represents data I collected over multiple weeks where I recorded the hours of sleep I got in one day and which transportation mode I used earlier in the day (walking, biking or taking the bus) to determine whether mode of transportation affects my sleep. I opted for a boxplot and seperate colors to better organize the three groups of transportation. Thanks to this visualization, I could better interpret my data and notice that I tend to sleep more on days where I walk (where I hit the highest Ymax) and the least when I take the bus.\n\nlibrary(ggplot2)\nlibrary(tidyverse)\nlibrary(janitor)\nlibrary(here)\nlibrary(readxl)\n\nmy_data &lt;- read_xlsx(here(\"files\",\"ES193DS_personal_data.xlsx\"), sheet = \"Sheet1\") \n# read in data\nmy_data_clean &lt;- my_data %&gt;% \n  clean_names() # clean data\n\nggplot(data = my_data_clean, \n       aes(x = transportation_mode, # x-axis\n           y = sleep_hrs, # y-axis\n           color = transportation_mode)) + # fill geoms by transportation mode\n  \n  geom_boxplot(color = \"darkgrey\") + # create boxplots\n  \n  geom_jitter(height = 0, # create jitter points size, width, and opacity\n              width = 0.1,\n              size = 2,\n              alpha = 0.6) + # data points set to 60% opacity\n  \n  scale_color_manual(values = c(\"firebrick4\", \"orange\", \"forestgreen\")) + \n  # set custom colors\n  \n  theme_minimal() + # minimal theme\n  labs(title = str_wrap(\"Boxplot comparing hours of sleep versus \n                        mode of transportation used in a day\", width = 60),  # set title\n       #wrap title so it doesn't get cut off\n       x = \"Mode of transportation\", # title x axis\n       y = \"Hours slept\") + # title y axis\n  \n  theme(legend.position = \"none\") + # take out the legend\n  theme(plot.title = element_text(hjust = 0.5)) + # center the title\n  theme(panel.border = element_rect(color = \"darkgrey\", fill = NA, linewidth = 1)) # keep panel border\n\n\n\n\n\n\n\n\n\n\n\nCitationBibTeX citation:@online{ostermann2025,\n  author = {Ostermann, Chloe},\n  title = {Code},\n  date = {2025-06-10},\n  url = {https://chloeostermann.github.io/posts/20250610_post3_code/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nOstermann, Chloe. 2025. “Code.” June 10, 2025. https://chloeostermann.github.io/posts/20250610_post3_code/."
-  },
-  {
-    "objectID": "posts/20250603_post2_biomimicry/index.html",
-    "href": "posts/20250603_post2_biomimicry/index.html",
-    "title": "Biomimicry in Architecture",
-    "section": "",
-    "text": "In March of 2024, I had the opportunity to take the class ES 40 with Professor Jen Martin. In this class, we explored how to exercise critical thinking when navigating the web and any resources we might use in our future professional careers.\nThe capstone assignment for this class was to develop a creative project on any subject we might be interested in. I picked the topic of bio-mimicry having heard of it in high school and being mesmerized by how intricately designed nature is and how applicable its elements can be to human designs.\nI opted for the topic of bio mimicry in architecture by giving the example of naturally insulated buildings inspired by termitarys (termite nests). To display all of my finding on this topic, I decided to create a zine on Canva.\n\n\n\n\nCitationBibTeX citation:@online{ostermann2025,\n  author = {Ostermann, Chloe},\n  title = {Biomimicry in {Architecture}},\n  date = {2025-06-03},\n  url = {https://chloeostermann.github.io/posts/20250601_post2_biomimicry/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nOstermann, Chloe. 2025. “Biomimicry in Architecture.” June\n3, 2025. https://chloeostermann.github.io/posts/20250601_post2_biomimicry/."
   },
   {
     "objectID": "index.html",
